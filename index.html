@@ -1,0 +1,163 @@
+<!doctype html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+
+		<title>Git, GitHub, Bitbucket - що це таке і як ними користуватися?</title>
+
+		<link rel="stylesheet" href="css/reveal.css">
+		<link rel="stylesheet" href="css/theme/white.css">
+
+		<!-- Theme used for syntax highlighting of code -->
+		<link rel="stylesheet" href="lib/css/zenburn.css">
+
+		<!-- Printing and PDF exports -->
+		<script>
+			var link = document.createElement( 'link' );
+			link.rel = 'stylesheet';
+			link.type = 'text/css';
+			link.href = window.location.search.match( /print-pdf/gi ) ? 'css/print/pdf.css' : 'css/print/paper.css';
+			document.getElementsByTagName( 'head' )[0].appendChild( link );
+		</script>
+	</head>
+	<body>
+		<div class="reveal">
+			<div class="slides">
+        <section>
+          <h2>Git, GitHub, Bitbucket - що це таке і як ними користуватися?</h2>
+          <img src="assets/img/first-slide.jpg" class="stretch">
+          <aside class="notes">
+            <p>Імя, переможець конкурсів</p>
+            <p>Фріланс</p>
+            <p>Хто знає, що таке гіт?</p>
+            <p>Питання по ходу</p>
+            <p>Що таке Git</p>
+          </aside>
+        </section>
+
+        <section>
+          <h2>Мій шлях</h2>
+          <ul>
+            <li>Відсутність системи контролю версій</li>
+            <li class="fragment">Папки з бекапами</li>
+            <li class="fragment">Використання Git</li>
+          </ul>
+          <aside class="notes">
+            <p>шлях до того, як я почав використовувати Git</p>
+            <p>Без історії до випадку з Яріком</p>
+            <p>Бекапи</p>
+            <p>Git</p>
+          </aside>
+        </section>
+
+        <section>
+          <h2>Ініціалізація Git в папці проекту</h2>
+          <pre><code>$ git init</code></pre>
+          <aside class="notes">
+            <p>Для того, щоб почати використовувати Git треба ініціалізувати </p>
+            <p>Всі повторюють на своїх пк ті операції, які я показую</p>
+          </aside>
+        </section>
+
+        <section>
+          <h2>Налаштуємо Git клієнт</h2>
+          <pre><code>$ git config --global user.name "Billy Everyteen" </code></pre>
+          <pre><code>$ git config --global user.email "your_email@example.com"</code></pre>
+          <aside class="notes">
+            Тепер налаштуємо Git клієнт
+          </aside>
+        </section>
+
+        <section>
+          <h2>Перевірка статусу</h2>
+          <pre><code>$ git status</code></pre>
+          <aside class="notes">
+            <p>Океей. Репозиторій ми створили імя налаштували, а шо далі?</p>
+            <p>створимо файл перший файл проекту index.html.</p>
+          </aside>
+        </section>
+
+        <section>
+          <h2>Збереження змін</h2>
+          <pre><code>$ git add [шляхи до файлів, які ми хочемо зберегти] </code></pre>
+          <pre><code>$ git commit -m "[назва коміта]"</code></pre>
+          <aside class="notes">
+            Тепер треба зберегти зміни.
+            <p>Для цього потрібно виконати дві команди.</p>
+            <p>Тепер зробимо зміни ще раз і збережемо.</p>
+          </aside>
+        </section>
+
+        <section>
+          <h2>Історія</h2>
+          <pre><code>$ git log</code></pre>
+          <aside class="notes">
+            <p>Щоб переглянути історію змін використовуємо команду git log.</p>
+          </aside>
+        </section>
+
+        <section>
+          <h2>Хостинги для Git репозиторіїв</h2>
+          <img src="assets/img/github-vs-bitbucket.jpg" alt="" class="stretch">
+          <aside class="notes">
+            Добре, з базовими командами розібралися. Тепер поговоримо про те, де зберігати код ваших проектів
+            <p>Реєструємося на гітхабі</p>
+          </aside>
+        </section>
+
+        <section>
+          <h2>Основні Команди для роботи з віддаленими репозиторіями</h2>
+          <pre><code>$ git remote add [назва репозиторія] [посилання на репозиторій]</code></pre>
+          <pre><code>$ git push [назва репозиторія] [вітка] </code></pre>
+          <pre><code>$ git pull [назва репозиторія] [вітка] </code></pre>
+          <pre><code>$ git clone [посилання на репозиторій]</code></pre>
+          <aside class="notes">
+            <p>Основні команди</p>
+            <p>Створюємо проект</p>
+            <p>Розіляємось на команди по 2 людини і кодимо в команді</p>
+          </aside>
+        </section>
+
+        <section>
+          <h2></h2>
+        </section>
+
+        <section>
+          <h2></h2>
+          <img class="stretch" src="assets/img/questions.jpg" alt="" />
+          <p style="text-align: left">
+            <p>Telegram - <a href="https://web.telegram.org/#/im?p=%40madtaras">@madtaras</a></p>
+            <p>VK - <a href="https://new.vk.com/madtaras">https://new.vk.com/madtaras</a></p>
+            <p>GitHub - <a href="https://github.com/madtaras">https://github.com/madtaras</a></p>
+          </p>
+          <aside class="notes">
+            Я знаю, що гіт спочатку тяжко використовувати, але, повірте, коли ви розберетесь, то не уявлятимете своє життя без нього.
+            <p>В когось є питання?</p>
+          </aside>
+        </section>
+
+			</div>
+		</div>
+
+		<script src="lib/js/head.min.js"></script>
+		<script src="js/reveal.js"></script>
+
+		<script>
+			// More info https://github.com/hakimel/reveal.js#configuration
+			Reveal.initialize({
+				history: true,
+
+				// More info https://github.com/hakimel/reveal.js#dependencies
+				dependencies: [
+					{ src: 'plugin/markdown/marked.js' },
+					{ src: 'plugin/markdown/markdown.js' },
+					{ src: 'plugin/notes/notes.js', async: true },
+					{ src: 'plugin/highlight/highlight.js', async: true, callback: function() { hljs.initHighlightingOnLoad(); }},
+          { src: 'socket.io/socket.io.js', async: true },
+          { src: 'plugin/notes-server/client.js', async: true }
+				]
+			});
+		</script>
+	</body>
+</html>
